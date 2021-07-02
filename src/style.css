@@ -1,0 +1,6 @@
+input[type="checkbox"],
+label,
+img {
+  padding: 10px;
+  margin-left: 10px;
+}
