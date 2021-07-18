@@ -1,16 +1,15 @@
-import React from 'react' ; 
- 
- 
- 
+import React , {Component} from 'react' ; 
 
-
-function App(){
-  return (
-    <div className="container">
-      kill me pls
-
-      </div>
-  );
+class App extends Component{
+   render(){
+    return (
+      <div className="container bg-dark text-white ">
+        kill me pl  s
+  
+        </div>
+    );
+  }
+  
 }
 
 export default App ; 
