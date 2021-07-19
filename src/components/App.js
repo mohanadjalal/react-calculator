@@ -1,15 +1,23 @@
-import React , {Component} from 'react' ; 
+import React, { Component } from 'react';
+import Header from './Header';
+import Tasks from './Tasks';
 
-class App extends Component{
-   render(){
+
+class App extends Component {
+  constructor() {
+    super()
+  }
+
+  render() {
     return (
-      <div className="container bg-dark text-white ">
-        kill me pl  s
-  
-        </div>
+      <div className="container border ">
+        <Header />
+        <Tasks />
+
+      </div >
     );
   }
-  
+
 }
 
-export default App ; 
+export default App;
