@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Tasks from './Tasks';
-
+import tasks from "./taskList";
 
 class App extends Component {
   constructor() {
@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="container border ">
         <Header />
-        <Tasks />
+        <Tasks tx={tasks} />
 
       </div >
     );

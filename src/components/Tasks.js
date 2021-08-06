@@ -1,20 +1,25 @@
-import tasks from "./taskList";
+
 import react, { Component } from "react";
+import Task from "./Task";
 class Tasks extends Component {
-    constructor() {
+
+    constructor(props) {
         super();
-        this.state = { task: tasks }
+        this.state = { task: props.tx }
+
     }
 
 
 
 
     render() {
+
         return (
             <div className="container">
                 {this.state.task.map((t) => (
-                    <h3 key={this.state.task.id}>{t.text}</h3>
+                    <Task key={t.id} task={t} />
                 ))}
+
             </div>
 
         );
